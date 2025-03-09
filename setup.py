@@ -2,19 +2,19 @@ from setuptools import setup, find_packages
 import os
 
 setup(
-    name='AnoymousJordan-Toolkit',
-    version='2.0',
+    name='anoymousjordan',
+    version='2.0.1',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
         'scapy',
-        'nmap',
         'flask',
-        'pyfiglet',
-        'sqlmap-api',
-        'beautifulsoup4',
         'requests',
-        'pycryptodome'
+        'beautifulsoup4',
+        'sqlmap-api',
+        'cryptography',
+        'pyopenssl',
+        'pyfiglet'
     ],
     entry_points={
         'console_scripts': [
@@ -23,12 +23,12 @@ setup(
     },
     data_files=[
         ('/etc/anoymousjordan', ['config/config.ini']),
-        ('/var/log/anoymousjordan', [])
+        ('/var/log/anoymousjordan', []),
+        ('/usr/share/anoymousjordan/templates', 
+            ['templates/facebook.html', 'templates/gmail.html'])
     ],
-    author='Your Name',
-    author_email='you@example.com',
-    description='Security toolkit for educational purposes only',
+    author='Anoymous Jordan Team',
+    description='Educational Security Toolkit for Network Analysis',
     license='MIT',
-    keywords='security network pentesting education',
-    url='https://github.com/yourname/AnoymousJordan-Toolkit'
+    url='https://github.com/isjsm/anoymous-joradan-tools'
 )
