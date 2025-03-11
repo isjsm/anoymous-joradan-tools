@@ -1,0 +1,9 @@
+scapy
+flask
+requests
+beautifulsoup4
+sqlmap-api
+cryptography
+pyopenssl
+pyfiglet
+termcolor
